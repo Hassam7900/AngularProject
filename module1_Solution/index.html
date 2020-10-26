@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1</title>
+        <script src="../../angular.min.js"></script>
+        <script src="./App.js"></script>
+    </head>
+    <body ng-app="LunchCheck">
+         <section ng-controller="LunchCheckController">
+         <input ng-style="textBoxColor" type="text" ng-model="dishes"/>
+             <input ng-click="checkLunch()" type="submit" value="Check If To Much"/>
+             <p ng-style="resultColor">{{result}}</p>
+         </section>
+    </body>
+</html>
